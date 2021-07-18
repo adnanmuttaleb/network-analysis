@@ -120,7 +120,11 @@ Reponse:
 ]
 ```
 
+## Notes:
 
+- To ease testing, hour aggregation runs always (you can disable this in `kpis/management/commands/update_network_stats.py` by removing the `settings.DEBUG` check).
+
+- Also to ease testing, you should replace the timestamp part of the files names with the current day first interval e.g datetime (July 18, 2021 0:05:00) the timestamp would be `1626566700000`.  
 
 
 
